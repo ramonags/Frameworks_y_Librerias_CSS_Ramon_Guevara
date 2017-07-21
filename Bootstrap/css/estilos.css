@@ -1,0 +1,24 @@
+body {
+  background-color: #2d2d2d;
+}
+
+header{
+  background-color: #ff9800;
+
+}
+.img-logo{
+width: 8em;
+}
+ .ico-redes p {
+   text-align: center;
+ }
+
+.ico-redes img{
+  width: 3em;
+  margin-top: 40px
+}
+.ico-redes img:hover{
+  margin-top: 30px;
+  opacity: 0.9;
+
+}

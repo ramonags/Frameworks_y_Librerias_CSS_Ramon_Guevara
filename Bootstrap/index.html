@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="container">
-  <div class="row">
+  <div class="menu row">
     <div class="col-md-10">
       <img src="img/logo.png" alt="Logo Rock" class="img-responsive img-logo">
     </div>
@@ -23,18 +23,18 @@
     </div>
   </div>
 </header>
-<nav>
+<nav class="menu container">
   <div class="row">
-    <div class="col-xs-12"><a href="#1">Inicio </a></div>
-    <div class="col-xs-12"><a href="#1">Artistas </a></div>
-    <div class="col-xs-12"><a href="#1">Grupos</a></div>
-    <div class="col-xs-12"><a href="#1">Top 10 </a></div>
-    <div class="col-xs-12"><a href="#1">Letras </a></div>
-    <div class="col-xs-12"><a href="#1">Acordes </a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Inicio </a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Artistas </a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Grupos</a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Top 10 </a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Letras </a></div>
+    <div class=" itens col-xs-12 col-md-2 col-lg-2"><a href="#1">Acordes </a></div>
   </div>
 </nav>
-
-<div class="container ">
+<br>
+<div class="contenido container ">
   <div class="row">
     <!--Area de articulos-->
     <div class="col-md-8">
@@ -45,12 +45,12 @@
       </div>
       <!--Articulo 1-->
       <div class="row">
-        <div class="container col-md-7">
+        <div class="container article col-md-7">
           <p class="text-justify">Metallica es una banda de heavy metal estadounidense originaria de Los Ángeles, pero con base en San Francisco desde febrero de 1983. Fue fundada en 1981 en Los Ángeles por Lars Ulrich y James Hetfield, a los que se les unirían Dave Mustaine y Cliff Burton. Estos dos músicos fueron después sustituidos por el guitarrista Kirk Hammett y el bajista Jason Newsted, Dave Mustaine fue despedido un año después de ingresar en la banda debido a su excesiva adicción al alcohol y su actitud violenta, y fundó la banda Megadeth, siendo sustituido por Kirk Hammett ex guitarrista de Exodus. Por otra parte, el 27 de septiembre de 1986, la muerte de Cliff Burton en un accidente de autobús en Suecia, durante una de sus giras, provocó la entrada al grupo de Jason Newsted,1 quien, tras su abandono quince años más tarde, sería sustituido por el bajista actual, Robert Trujillo.</p>
         </div>
         <!--Articulo 1 Imagen-->
-        <div class="col-md-5">
-          <img src="img/metallica.png" alt="Metallica" class="imgthumbnail img-responsive">
+        <div class="col-md-5 article-img">
+          <img src="img/metallica.png" alt="Metallica" class="img-thumbnail img-responsive ">
         </div>
         <!--Area de comentario 1-->
         <div class="col-md-12">
@@ -58,7 +58,7 @@
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-user"></span>
             </div>
-            <textarea name="comentario" rows="2" cols="80" placeholder="Escriba un Comentarios"></textarea>
+              <textarea class="form-control" rows="2" placeholder="Escriba un comentarios"></textarea>
           </div>
         </div>
       </div>
@@ -73,29 +73,64 @@
       <!-- Articulo 2 -->
 
       <div class="row">
-        <div class="container col-md-7">
+        <div class="container article col-xs-12 col-sm-8 col-md-8 col-lg-8  col-sm-push-4 ">
           <p class="text-justify">Caramelos de cianuro es una banda venezolana de rock originaria de Caracas. También es conocida a nivel nacional como CDC, o simplemente como Caramelos. Fue fundada en 1991 por Asier Cazalis (vocalista y bajista), Luis Golding (guitarrista), Miguel Ángel González (guitarrista) y Pablo Martínez (baterista). Luis Golding (que estaba en calidad de guitarrista junto a Miguel González) dejó la banda antes de la grabación de su álbum Harakiri City, por lo que la banda paso a ser un trío hasta que el vocalista Asier Cazalis (que también tocaba el bajo) decidió dedicarse sólo al canto, por lo que Luis Golding (cuyo nombre de pila es Luís Barrios) regresó a la banda en calidad de bajista.</p>
         </div>
         <!--Articulo 2 Imagen-->
-        <div class="col-md-5">
-          <img src="img/caramelos.jpg" alt="Metallica" class="imgthumbnail img-responsive">
+        <div class="article-img col-xs 12 col-sm-4 col-md-4  col-lg-4  col-sm-pull-8 ">
+          <img src="img/caramelos.jpg" alt="Metallica" class="img-thumbnail img-responsive">
         </div>
         <!--Area de comentario 2-->
-        <div class="col-md-12">
+        <div class="comentarios col-xs-12 col-sm-12 col-md-12  col-lg-12">
           <div class="input-group">
             <div class="input-group-addon">
               <span class="glyphicon glyphicon-user"></span>
             </div>
-            <textarea name="comentario" rows="2" cols="80" placeholder="Escriba un Comentarios"></textarea>
+            <textarea class="form-control" rows="2" placeholder="Escriba un comentarios"></textarea>
           </div>
         </div>
       </div>
+    </div>
       <!--Fin Del Articulo 2-->
+      <!-- area de comentarios 2  ------->
+      <div class="buscador hidden-xs  col-sm-4 col-md-4  col-lg-4">
+        <hr>
+        <div class="row ">
+          <div class="col-lg-10 col-md-offset-1 ">
+           <div class="input-group">
+             <span class="input-group-btn">
+               <button class="btn btn-warning" type="button"><span class="glyphicon glyphicon-search"></span></button>
+             </span>
+             <input type="text" class="form-control" placeholder="Buscar Por...">
+           </div>
+         </div>
+        </div>
+        <hr>
+        <div class="list-group">
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+          <button type="button" class="list-group-item">Morbi leo risus</button>
+          <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+          <button type="button" class="list-group-item">Vestibulum at eros</button>
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+          <button type="button" class="list-group-item">Morbi leo risus</button>
+          <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+          <button type="button" class="list-group-item">Vestibulum at eros</button>
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+          <button type="button" class="list-group-item">Morbi leo risus</button>
+          <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+          <button type="button" class="list-group-item">Vestibulum at eros</button>
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+          <button type="button" class="list-group-item">Morbi leo risus</button>
+
+        </div>
+      </div>
 
 
     </div>
-  </div>
-
 </div>
 
 <script src='js/bootstrap.min.js'></script>

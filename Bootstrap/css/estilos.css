@@ -3,7 +3,7 @@ body {
 }
 
 header{
-  background-color: #ff9800;
+  background-color: #ffcc80;
 
 
 }
@@ -23,7 +23,7 @@ width: 8em;
   opacity: 0.9;
 }
 nav{
-  background: #f57c00;
+  background:#ff9800 ;
 }
 
 .menu{
@@ -43,7 +43,7 @@ nav{
   font-weight: bold;
 }
 .itens:hover{
-   background-color: #fb8c00;
+   background-color: #ef6c00;
  }
  .itens a:hover{
   color: #fff;
